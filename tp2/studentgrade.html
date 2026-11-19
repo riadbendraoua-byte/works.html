@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student grade manager</title>
+    <script>
+        const web = document.getElementById("web")
+        const algo = document.getElementById("algo")
+        const db = document.getElementById("db")
+        let j = 0
+        function calc () {
+
+        
+        if (Number(web.value) > 0 && Number(algo.value) > 0 && Number(db.value) > 0){
+            j=j+web.value()+algo.value()+db.value()
+            let s =0
+            s=j/3
+        }else{
+            alert("error")
+        }
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>student grade manager</h1>
+        <p>jdjjd sjdwowd kwndd kwdnkdn kwdwd</p>
+        <div id="form">
+        <form >
+            <div>
+                <label >name</label>
+            <input type="text" name="name">
+            </div>
+            <div>
+                <label>web grade</label>
+            <input type="number" id="web">
+            </div>
+            <div>
+                <label>db grade</label>
+            <input type="number" id="db">
+            </div>
+            <div>
+                <label>algo grade</label>
+            <input type="number" id="algo">
+            </div>
+            <button id="butt" onclick="calc">add student</button>
+        </form>
+        </div>
+        <div>
+            <table border="1.5">
+                <th>id</th>
+                <th>student name</th>
+                <th>web</th>
+                <th>db</th>
+                <th>algo</th>
+                <th>avg</th>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="avg"></td>
+                </tr>
+                
+            </table>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
