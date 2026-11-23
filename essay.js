@@ -13,5 +13,9 @@ function re (st){
     }
     return k
 }
+    for (let j =0;j<20;j++){
+        print ("riad ")
+    }
+
 print (s)
 print (re(s))
