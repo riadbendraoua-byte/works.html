@@ -1,5 +1,5 @@
 let number = 10
-number ++ 
+number ++ ;
 function print (y){
     console.log(y)
 }
